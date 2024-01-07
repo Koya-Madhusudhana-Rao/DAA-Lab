@@ -6,7 +6,7 @@ public class prims {
     public static void primMST(int[][] graph) {
         int vertices = graph.length;
 
-        // Array to store the parent of each vertex in the MST
+        // Arra y to store the parent of each vertex in the MST
         int[] parent = new int[vertices];
 
         // Array to store the key values of each vertex
