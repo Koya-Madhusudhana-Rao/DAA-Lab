@@ -28,7 +28,7 @@ public class quicksort {
 
     // Method to qucksort recursively
     public static void quicksorte(int[] arr, int l, int r) {
-        if (l < r) {
+        if(l < r) {
             int pi = partition(arr, l, r);
 
             quicksorte(arr, l, pi - 1);

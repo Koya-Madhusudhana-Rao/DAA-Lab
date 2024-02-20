@@ -1,32 +1,28 @@
 import java.util.Scanner;
 
 public class LinearSearch {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 10 };
+        int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 10 }; // Same array structure
+        System.out.println("Enter the target element");
         int target = sc.nextInt();
-        int result = Linear(arr, target);
-        System.out.println(result);
 
-        if (result != 1) {
-            System.out.println("Element found at index " + result);
-        } else {
-            System.out.println("Element Not found");
-        }
-        // Linear(arr, item);
+        // Call Linear only once and directly print its output
+        System.out.println(Linear(arr, target));
+
     }
 
-    public static int Linear(int arr[], int target) {
-        for (int i = 0; i < arr.length - 1; i++) {
+    public static String Linear(int arr[], int target) {
+        // Iterate through the entire array (fix potential missed element)
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
-                return i;
-
+                return "Element found at index " + i;
             }
         }
-
-        return 1;
+        return "Element Not found";
     }
 
 }
