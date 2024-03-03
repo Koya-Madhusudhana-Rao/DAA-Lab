@@ -2,9 +2,9 @@
 // algorithm. The program is for adjacency matrix
 // representation of the graph
 
-import java.io.*;
-import java.lang.*;
-import java.util.*;
+// import java.io.*;
+// import java.lang.*;
+// import java.util.*;
 
 class MST {
 
@@ -111,5 +111,3 @@ class MST {
 		t.primMST(graph);
 	}
 }
-
-// This code is contributed by Aakash Hasija

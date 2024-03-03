@@ -41,8 +41,8 @@ public class FractionalKnapsack {
     public static void main(String[] args) {
         Item[] items = {
                 new Item(60, 10),
-                new Item(100, 20),
-                new Item(120, 30)
+                new Item(10, 20),
+                new Item(20, 30)
         };
 
         int capacity = 50;
